@@ -1,0 +1,4 @@
+ipython
+boto3
+pytest
+pylint

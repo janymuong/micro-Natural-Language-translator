@@ -16,6 +16,6 @@ test:
 	#python -m pytest -vv test_cli-tanslate.py
 
 lint:
-	pylint --disable=R,C cli-translate.py translate.py
+	pylint --disable=R,C src/cli-translate.py src/translate.py
 
 all: install test lint

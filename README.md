@@ -85,7 +85,7 @@ Response Syntax:
 }
 ```
 
-### Parameters
+### Parameters - Request syntax
 `Text`  
 (string) --     
 [REQUIRED]      

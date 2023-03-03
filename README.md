@@ -56,6 +56,35 @@ response = client.translate_text(
 )
 ```
 
+### Return type
+`dict`
+
+Returns
+Response Syntax:
+
+```dict
+{
+    'TranslatedText': 'string',
+    'SourceLanguageCode': 'string',
+    'TargetLanguageCode': 'string',
+    'AppliedTerminologies': [
+        {
+            'Name': 'string',
+            'Terms': [
+                {
+                    'SourceText': 'string',
+                    'TargetText': 'string'
+                },
+            ]
+        },
+    ],
+    'AppliedSettings': {
+        'Formality': 'FORMAL'|'INFORMAL',
+        'Profanity': 'MASK'
+    }
+}
+```
+
 ### Parameters
 `Text`  
 (string) --     
@@ -107,32 +136,3 @@ To mask profane words and phrases, Amazon Translate replaces them with the grawl
 Amazon Translate doesn't detect profanity in all of its supported languages. For languages that don't support profanity detection, see Unsupported languages in the Amazon Translate Developer Guide.
 
 If you specify multiple target languages for the job, all the target languages must support profanity masking. If any of the target languages don't support profanity masking, the translation job won't mask profanity for any target language.
-
-### Return type
-`dict`
-
-Returns
-Response Syntax:
-
-```dict
-{
-    'TranslatedText': 'string',
-    'SourceLanguageCode': 'string',
-    'TargetLanguageCode': 'string',
-    'AppliedTerminologies': [
-        {
-            'Name': 'string',
-            'Terms': [
-                {
-                    'SourceText': 'string',
-                    'TargetText': 'string'
-                },
-            ]
-        },
-    ],
-    'AppliedSettings': {
-        'Formality': 'FORMAL'|'INFORMAL',
-        'Profanity': 'MASK'
-    }
-}
-```

@@ -14,9 +14,10 @@ This is an AWS Lambda function-like text translator created with Python and Boto
 ## Running the Translator as a `CLI`    
 ```bash
 python3 cli-translate.py
+# this will run an interactive CLI prompt
 ```
 
-`Sample anaologous behavior in Git Bash for Windows`:   
+Sample analogous behavior in Git Bash on Windows:   
 ```bash
 me@HP MINGW64 ~/aws-cloud-devops/micro-Natural-Language-translator/src (main)
 $ python cli-translate.py

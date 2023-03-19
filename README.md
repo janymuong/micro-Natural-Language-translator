@@ -6,7 +6,7 @@ This is an AWS Lambda function-like text translator created with Python and Boto
 
 ## Setup
 - create a siloed Python virtual environment, and activate it: `make setup`
-    > this is a directive in [Makefile](./Makefile)
+    > this is a directive in [Makefile](./Makefile)        
     > combines `python3 -m venv .nl-lambda`, `source .nl-lambda/bin/activate`
 
 - install the dependencies via Makefile: `make install`

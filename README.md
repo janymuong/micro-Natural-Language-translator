@@ -5,10 +5,10 @@
 This is an AWS Lambda function-like text translator created with Python and Boto3.
 
 ## Setup
-- create a siloed Python virtual environment: `make setup`
+- create a siloed Python virtual environment, and activate it: `make setup`
     > this is a directive in [Makefile](./Makefile)
+    > combines `python3 -m venv .nl-lambda`, `source .nl-lambda/bin/activate`
 
-- activate the virtual environment: `source ~/.nl-lambda/bin/activate`
 - install the dependencies via Makefile: `make install`
 
 ## Running the Translator as a `CLI`    
@@ -23,7 +23,7 @@ me@HP MINGW64 ~/aws-cloud-devops/micro-Natural-Language-translator/src (main)
 $ python cli-translate.py
 Put in a phrase you want to translate: Salut, je nes suis un robot
 Translate phrase: Salut, je nes suis un robot
-Hi, I'm not a robot
+Hi, I\'m not a robot
 (.nl-lambda)
 me@HP MINGW64 ~/aws-cloud-devops/micro-Natural-Language-translator/src (main)
 $

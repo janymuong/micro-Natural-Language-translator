@@ -5,8 +5,7 @@
 
 setup:
 	# create python virtualenv & source it
-	# source ~/.nl-lambda/bin/activate
-	python3 -m venv ~/.nl-lambda
+	python3 -m venv .nl-lambda && source .nl-lambda/bin/activate
 
 install:
 	pip install --upgrade pip &&\
